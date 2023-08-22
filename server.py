@@ -5,6 +5,7 @@ from fastapi.responses import HTMLResponse, RedirectResponse
 from fastapi.templating import Jinja2Templates
 import threading, queue, uvicorn, json, time
 import os, sys
+import pymysql
 #scp ChenLi.tar root@34.95.204.226:/root/workspace 35.202.98.116
 base_path = os.path.dirname(os.path.abspath(__file__))
 app = FastAPI()
