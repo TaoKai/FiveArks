@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Questions</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: rgb(122, 122, 122);
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .custom-checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+
+  .custom-checkbox::before {
+    content: "";
+    display: none;
+    width: 12px;
+    height: 12px;
+    background-color: #71b1d4;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type="checkbox"]:checked + .custom-checkbox::before {
+    display: block;
+  }
+
+  .button-group {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .buttonB {
+    width: 100px;
+    padding: 5px 20px;
+    margin: 0 5px;
+    background-color: #7a7a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    display: none;
+  }
+
+  .buttonB:active {
+    background-color: #d0d0d0; /* Change color on button press */
+  }
+
+  .button {
+    width: 150px;
+    padding: 5px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .button:active {
+    background-color: #99caff; /* Change color on button press */
+  }
+
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+</style>
+</head>
+<body>
+  <h1>What are your objectives?</h1>
+  <h2>Select up to 3 objectives. These will be kept private from other users, but help us find relevant matches.</h2>
+    <form id="form" action="/answer_q1" method="post">
+    <div id="checkbox-group" class="checkbox-group">
+    <label>
+      <input type="checkbox" value="1.IB">
+      <span class="custom-checkbox"></span>
+        IB
+    </label>
+    <label>
+      <input type="checkbox" value="2.Consulting">
+      <span class="custom-checkbox"></span>
+      Consulting
+    </label>
+    <label>
+      <input type="checkbox" value="3.Buyside (PE, VC, Hedge Fund)">
+      <span class="custom-checkbox"></span>
+      Buyside (PE, VC, Hedge Fund)
+    </label>
+    <label>
+        <input type="checkbox" value="4.Corp Dev">
+        <span class="custom-checkbox"></span>
+        Corp Dev
+    </label>
+    <label>
+        <input type="checkbox" value="5.Corp General">
+        <span class="custom-checkbox"></span>
+        Corp General
+    </label>
+    <label>
+        <input type="checkbox" value="6.Startup">
+        <span class="custom-checkbox"></span>
+        Startup
+    </label>
+    <label>
+        <input type="checkbox" value="7.Hedge Fund">
+        <span class="custom-checkbox"></span>
+        Hedge Fund
+    </label>
+    <label>
+        <input type="checkbox" value="8.All">
+        <span class="custom-checkbox"></span>
+        All
+    </label>
+    <label>
+        <input type="checkbox" value="9.Other - please specify">
+        <span class="custom-checkbox"></span>
+        Other - please specify
+    </label>
+  </div>
+  <div class="button-group">
+    <button class="buttonB" id="backBtn">Back</button>
+    <button class="button" id="nextBtn" type="submit" disabled>Next</button>
+  </div>
+  </form>
+  <script>
+    const userInfo = ["{{first_name}}", "{{last_name}}", "{{email}}", "{{profession}}"];
+    const backBtn = document.getElementById("backBtn")
+    const nextBtn = document.getElementById("nextBtn")
+    var checkValues = [];
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    const form = document.getElementById("form");
+    checkboxes.forEach((checkbox, index) => {
+        checkbox.addEventListener("change", ()=>{
+            const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+            checkValues = [];
+            checkedCheckboxes.forEach((cb, i)=>{
+                checkValues.push(cb.value);
+            });
+            if(checkValues.length>2){
+                nextBtn.disabled = false;
+            }else{
+                nextBtn.disabled = true;
+            }
+        });
+    });
+    backBtn.addEventListener("click", ()=>{
+        window.history.back();
+    });
+    form.addEventListener("submit", (event)=>{
+        const hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", "hidden");
+        hiddenField.setAttribute("name", "informations");
+        const infoStr = userInfo.join("|")+"|"+checkValues.join("|");
+        hiddenField.setAttribute("value", infoStr);
+        form.appendChild(hiddenField);
+    });
+  </script>
+</body>
+</html>
