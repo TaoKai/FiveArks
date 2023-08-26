@@ -42,8 +42,8 @@ async def answer_q1(request: Request, informations: Annotated[str, Form()]):
     return templates.TemplateResponse("question2345.html", dic)
 
 @app.post("/answer_q2345")
-async def answer_q2345(request: Request, informations: Annotated[str, Form()]):
-    information_list = informations.split('|')
+async def answer_q2345(request: Request, value: Annotated[str, Form()]):
+    information_list = value.split('|')
     college1 = information_list[7] if len(information_list) > 7 else ""
     college2 = information_list[8] if len(information_list) > 8 else ""
     college3 = information_list[9] if len(information_list) > 9 else ""
