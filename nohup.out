@@ -532,3 +532,223 @@ INFO:     175.99.132.245:61116 - "POST /answer_q1 HTTP/1.1" 200 OK
 {'request': <starlette.requests.Request object at 0x7f3528ff0410>, 'college1': 'BUPT', 'college2': 'aaaa', 'college3': '', 'industry1': 'Industrials', 'industry2': 'Technology Media (TMT)', 'industry3': 'Financial Institutions Group (FIG)'}
 INFO:     175.99.132.245:62668 - "POST /answer_q2345 HTTP/1.1" 200 OK
 INFO:     38.34.113.16:62251 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:44742 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:44888 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:64309 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64309 - "POST /answer_q1 HTTP/1.1" 200 OK
+{'request': <starlette.requests.Request object at 0x7f3528ff2490>, 'college1': 's', 'college2': 'a', 'college3': '', 'industry1': 'Industrials', 'industry2': 'Industrials', 'industry3': 'Industrials'}
+INFO:     38.34.113.16:64309 - "POST /answer_q2345 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     Started server process [23755]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:64364 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64365 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64365 - "POST /answer_q1 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 289, in __call__
+    await super().__call__(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 273, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 190, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/workspace/FiveArks/server.py", line 38, in answer_q1
+    "first_name": first_name,
+                  ^^^^^^^^^^
+NameError: name 'first_name' is not defined
+INFO:     Started server process [23855]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 80): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     38.34.113.16:64386 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64386 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64386 - "POST /answer_q1 HTTP/1.1" 500 Internal Server Error
+ERROR:    Exception in ASGI application
+Traceback (most recent call last):
+  File "/root/anaconda3/lib/python3.11/site-packages/uvicorn/protocols/http/httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/uvicorn/middleware/proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/applications.py", line 289, in __call__
+    await super().__call__(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/applications.py", line 122, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 184, in __call__
+    raise exc
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/errors.py", line 162, in __call__
+    await self.app(scope, receive, _send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 79, in __call__
+    raise exc
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/middleware/exceptions.py", line 68, in __call__
+    await self.app(scope, receive, sender)
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 20, in __call__
+    raise e
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/middleware/asyncexitstack.py", line 17, in __call__
+    await self.app(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 718, in __call__
+    await route.handle(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 276, in handle
+    await self.app(scope, receive, send)
+  File "/root/anaconda3/lib/python3.11/site-packages/starlette/routing.py", line 66, in app
+    response = await func(request)
+               ^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 273, in app
+    raw_response = await run_endpoint_function(
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/anaconda3/lib/python3.11/site-packages/fastapi/routing.py", line 190, in run_endpoint_function
+    return await dependant.call(**values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/workspace/FiveArks/server.py", line 38, in answer_q1
+    recruit3 = information_list[6] if len(information_list) > 6 else ""
+                      ^^^^^^^^^^
+NameError: name 'first_name' is not defined
+INFO:     51.79.29.48:60156 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:60252 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     Started server process [23934]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:64418 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64418 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64418 - "POST /answer_q1 HTTP/1.1" 422 Unprocessable Entity
+INFO:     Started server process [24014]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:64433 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64433 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64433 - "POST /answer_q1 HTTP/1.1" 200 OK
+{'request': <starlette.requests.Request object at 0x7fb030710fd0>, 'college1': 'a', 'college2': 'a', 'college3': '', 'industry1': 'Industrials', 'industry2': 'Industrials', 'industry3': 'Industrials'}
+INFO:     38.34.113.16:64432 - "POST /answer_q2345 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64448 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.138.49:37288 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.138.49:33346 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.138.49:37722 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     38.34.113.16:64549 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64549 - "POST /sign_up HTTP/1.1" 422 Unprocessable Entity
+INFO:     Started server process [24276]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:64566 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64567 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64568 - "POST /sign_up HTTP/1.1" 422 Unprocessable Entity
+INFO:     Started server process [24281]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 80): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     38.34.113.16:64582 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64582 - "POST /sign_up HTTP/1.1" 422 Unprocessable Entity
+INFO:     38.34.113.16:64583 - "POST /sign_up HTTP/1.1" 422 Unprocessable Entity
+INFO:     92.118.39.40:50552 - "GET / HTTP/1.1" 200 OK
+INFO:     Started server process [24369]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:64729 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64729 - "POST /sign_up HTTP/1.1" 422 Unprocessable Entity
+INFO:     38.34.113.16:64745 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64745 - "POST /sign_up HTTP/1.1" 200 OK
+{'request': <starlette.requests.Request object at 0x7fc843fe35d0>, 'recruit1': '2.Consulting', 'recruit2': '3.Buyside (PE, VC, Hedge Fund)', 'recruit3': 'EMPTY'}
+INFO:     38.34.113.16:64745 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     154.209.125.126:15245 - "GET / HTTP/1.1" 200 OK
+INFO:     Started server process [24643]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:64832 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64833 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64833 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64850 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64851 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64851 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64865 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64865 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64865 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64886 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64886 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64886 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64885 - "GET / HTTP/1.1" 200 OK
+INFO:     154.209.125.2:33636 - "GET / HTTP/1.1" 200 OK
+INFO:     154.209.125.2:34446 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     154.209.125.2:1194 - "GET /robots.txt HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     103.100.173.137:37461 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:43314 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:43472 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     51.79.29.48:48398 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:48612 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     Started server process [25392]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:49306 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49306 - "GET /signup.html HTTP/1.1" 404 Not Found
+INFO:     Started server process [25489]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:49389 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49389 - "GET /signup.html HTTP/1.1" 404 Not Found
+INFO:     Started server process [25572]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:49428 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49428 - "GET /signup.html HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:49429 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49429 - "GET /signin.html HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:49429 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49429 - "GET /signup.html HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:49440 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49472 - "GET /signup.html HTTP/1.1" 404 Not Found
+INFO:     162.216.150.219:57686 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:52322 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:52474 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     38.68.53.162:56145 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     38.68.53.162:56169 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     87.236.176.75:41555 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:49458 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:49692 - "GET /.env HTTP/1.1" 404 Not Found

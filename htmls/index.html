@@ -3,170 +3,57 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sign Up</title>
+<title>Project FiveARKs</title>
 <style>
   body {
     font-family: Arial, sans-serif;
-    /* background-color: #f0f0f0; */
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-  }
-
-  .login-container {
-    width: 50%;
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px;
-    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); */
-    text-align: center;
-  }
-
-  .login-container img {
-    width: 450px;
-    height: 200px;
-    margin-bottom: 10px;
-  }
-
-  .error-message {
-    color: red;
-    font-size: 16px;
-    margin-bottom: 10px;
-  }
-
-  .input-field {
-    width: 95%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .input-field.error-input {
-    border: 1px solid red; /* Add red border for error input fields */
-  }
-
-  .select-field {
-    width: 78%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-
-  .login-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 15px;
-    padding: 10px 20px;
-    cursor: pointer;
-    width: 60%;
-    font-size: 18px;
-  }
-  .login-button:active {
-    background-color: #0056b3; /* Change color on button press */
-  }
-  .select-label {
-    width: 40%;
-    padding: 10px;
-    margin: 10px 0;
-    font-size: 15px;
-    color: #8d8d8d;
-    text-align: center;
-  }
-  
-  /* Style for errored input fields */
-  .error-input {
-    border: 1px solid red;
+    height: 100vh;
+    flex-direction: column;
   }
 
   h1 {
-    font-size: 45px;
+    font-size: 36px;
     color: #333;
     margin-bottom: 20px;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 400px;
+    margin-top: 20px;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: normal;
+    transition: font-weight 0.3s, text-decoration 0.3s;
+  }
+
+  .button:hover {
+    text-decoration: none;
+    font-weight: bold;
   }
 </style>
 </head>
 <body>
-<div class="login-container">
-    <h1>Project FiveARKs</h1>
-    <div id="error-message" class="error-message"></div> <!-- Error message div -->
-    <form action="/sign_up" method="post" onsubmit="return validateForm();">
-    <input id="first_name" name="first_name" class="input-field" type="text" placeholder="First Name">
-    <input id="last_name" name="last_name" class="input-field" type="text" placeholder="Last Name">
-    <input id="email" name="email" class="input-field" type="email" placeholder="Email">
-    <label class="select-label">Professional Type</label>
-    <select id="profession" class="select-field" name="profession">
-        <option value="MBA1">MBA1</option>
-        <option value="MBA2">MBA2</option>
-        <option value="Law1">Law - 1L</option>
-        <option value="Law2">Law - 2L</option>
-        <option value="Law3LLM">Law - 3L / LLM</option>
-        <option value="Working Professional">Working Professional</option>
-        <option value="Recent Grad Seeking Job">Recent Grad Seeking Job</option>
-        <option value="Undergrad">Undergrad</option>
-        <option value="Other">Other</option>
-    </select>
-    <button id="sign_up" class="login-button" type="submit">Let's get started</button>
-  </form>
+<h1>Project FiveARKs</h1>
+<div class="button-container">
+  <a href="signin.html" class="button">Sign In</a>
+  <a href="signup.html" class="button">Sign Up</a>
 </div>
-<script>
-  function isTrimNonNull(strArray) {
-    var flag = true;
-    for (s of strArray) {
-      if (s === null || s.trim() === "") {
-        flag = false;
-        return flag;
-      }
-    }
-    return flag;
-  }
-
-  function isEnglishText(input) {
-    const englishPattern = /^[A-Za-z\s]+$/;
-    return englishPattern.test(input);
-  }
-
-  function validateForm() {
-    const first_name_inp = document.getElementById("first_name").value;
-    const last_name_inp = document.getElementById("last_name").value;
-    const email_inp = document.getElementById("email").value;
-    const profession_sel = document.getElementById("profession").value;
-    const datas = [first_name_inp, last_name_inp, email_inp, profession_sel];
-    
-    const errorMessageElement = document.getElementById("error-message");
-    errorMessageElement.textContent = ""; // Clear any previous error message
-    
-    // Clear the error styles from previous validation
-    const inputFields = document.querySelectorAll(".input-field");
-    inputFields.forEach(input => input.classList.remove("error-input"));
-
-    if (!isEnglishText(first_name_inp) || !isEnglishText(last_name_inp)) {
-      errorMessageElement.textContent = "Please enter your first and last names in English.";
-      
-      // Add error styles to input fields
-      if (!isEnglishText(first_name_inp)) {
-        document.getElementById("first_name").classList.add("error-input");
-      }
-      if (!isEnglishText(last_name_inp)) {
-        document.getElementById("last_name").classList.add("error-input");
-      }
-
-      return false;
-    }
-
-    if (isTrimNonNull(datas)) {
-      return true;
-    } else {
-      alert("Information Incomplete");
-      return false;
-    }
-  }
-</script>
 </body>
 </html>
