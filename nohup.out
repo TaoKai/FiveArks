@@ -1,0 +1,385 @@
+INFO:     Started server process [14891]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     175.99.132.245:28428 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:28492 - "GET /images/1.png HTTP/1.1" 304 Not Modified
+INFO:     175.99.132.245:31700 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:32444 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:38882 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:39238 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:39256 - "GET /images/1.png HTTP/1.1" 200 OK
+INFO:     175.99.132.245:39326 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     192.241.196.100:34060 - "GET /manager/html HTTP/1.1" 404 Not Found
+INFO:     205.210.31.14:51771 - "GET / HTTP/1.0" 200 OK
+INFO:     69.164.217.74:59790 - "GET / HTTP/1.1" 200 OK
+INFO:     172.105.128.13:50120 - "GET / HTTP/1.1" 200 OK
+INFO:     184.105.139.69:3504 - "GET / HTTP/1.1" 200 OK
+INFO:     184.105.139.69:17394 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     184.105.139.69:25444 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     108.39.236.102:34807 - "GET / HTTP/1.1" 200 OK
+INFO:     74.201.28.70:65381 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     74.201.28.70:65418 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     77.245.222.133:45955 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     38.34.113.16:52299 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:52298 - "GET /images/1.png HTTP/1.1" 200 OK
+INFO:     38.34.113.16:52298 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     38.34.113.16:49737 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49737 - "GET /images/1.png HTTP/1.1" 200 OK
+INFO:     38.34.113.16:49737 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:49876 - "GET / HTTP/1.1" 200 OK
+INFO:     20.215.65.71:59819 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     20.215.65.71:59819 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     176.104.33.39:39242 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     185.36.81.33:41416 - "GET / HTTP/1.1" 200 OK
+INFO:     185.224.128.142:58966 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     171.244.81.137:58456 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     92.176.78.171:46557 - "GET / HTTP/1.1" 200 OK
+INFO:     35.203.210.127:64282 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     179.43.191.194:51666 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     45.56.108.128:62183 - "GET /systembc/password.php HTTP/1.0" 404 Not Found
+INFO:     162.142.125.216:55670 - "GET / HTTP/1.1" 200 OK
+INFO:     162.142.125.216:40118 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.216:46094 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     35.187.98.121:40460 - "GET / HTTP/1.1" 200 OK
+INFO:     141.105.87.18:49801 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.145.60:55494 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.145.60:59184 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.145.60:56326 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     183.136.225.32:32091 - "GET / HTTP/1.1" 200 OK
+INFO:     183.136.225.32:12236 - "GET / HTTP/1.1" 200 OK
+INFO:     183.136.225.32:52966 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     183.136.225.32:22049 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     45.83.66.247:4242 - "GET / HTTP/1.1" 200 OK
+INFO:     45.83.65.77:4246 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     31.220.1.83:36054 - "GET / HTTP/1.1" 200 OK
+INFO:     96.56.31.116:52217 - "GET / HTTP/1.1" 200 OK
+INFO:     185.36.81.33:56732 - "GET / HTTP/1.1" 200 OK
+INFO:     141.98.11.60:56646 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     188.43.201.109:47338 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65452 - "GET / HTTP/1.1" 200 OK
+INFO:     40.77.167.85:8584 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     52.167.144.25:43221 - "GET / HTTP/1.1" 200 OK
+WARNING:  Unsupported upgrade request.
+WARNING:  No supported WebSocket library detected. Please use "pip install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
+WARNING:  Invalid HTTP request received.
+INFO:     51.79.29.48:56022 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:56174 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     51.79.29.48:55226 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:55432 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     51.79.29.48:35680 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:36130 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:50912 - "GET /80 HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:50912 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:50919 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50919 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:50932 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50932 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50982 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     185.233.19.163:34298 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     152.32.212.30:49302 - "GET / HTTP/1.1" 200 OK
+INFO:     152.32.212.30:49770 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     167.94.146.51:49378 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.146.51:53686 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.51:37494 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     51.79.29.48:42244 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:42386 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     192.241.228.37:49756 - "GET / HTTP/1.1" 200 OK
+INFO:     35.203.210.253:64014 - "GET / HTTP/1.1" 200 OK
+INFO:     92.118.39.40:37029 - "GET / HTTP/1.1" 200 OK
+INFO:     104.53.167.176:50946 - "GET /80 HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:50946 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:51032 - "GET /80 HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:51037 - "GET /80 HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:51083 - "GET /80 HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:64803 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64803 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:51232 - "GET / HTTP/1.1" 200 OK
+INFO:     104.53.167.176:51232 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:51233 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:64982 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     104.53.167.176:51698 - "POST /sign_up HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     38.34.113.16:65047 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65050 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65054 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65152 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65152 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65155 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65159 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65162 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65182 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     170.231.143.157:47666 - "GET / HTTP/1.1" 200 OK
+INFO:     170.64.154.53:54228 - "GET /aaa9 HTTP/1.1" 404 Not Found
+INFO:     170.64.154.53:47194 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     170.64.154.53:35164 - "GET / HTTP/1.1" 200 OK
+INFO:     83.97.73.87:37274 - "GET / HTTP/1.1" 200 OK
+INFO:     83.97.73.87:37064 - "POST /Autodiscover/Autodiscover.xml HTTP/1.1" 404 Not Found
+INFO:     83.97.73.87:34208 - "POST /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     83.97.73.87:54322 - "GET /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php HTTP/1.1" 404 Not Found
+INFO:     83.97.73.87:51846 - "GET /solr/admin/info/system?wt=json HTTP/1.1" 404 Not Found
+INFO:     104.152.52.206:52795 - "GET / HTTP/1.0" 200 OK
+INFO:     83.97.73.87:47090 - "GET /?XDEBUG_SESSION_START=phpstorm HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     83.97.73.87:54838 - "GET /console/ HTTP/1.1" 404 Not Found
+INFO:     5.188.210.227:30961 - "GET /echo.php HTTP/1.1" 404 Not Found
+INFO:     83.97.73.87:41706 - "GET /_ignition/execute-solution HTTP/1.1" 404 Not Found
+INFO:     83.97.73.87:54402 - "GET / HTTP/1.1" 200 OK
+INFO:     83.97.73.87:52146 - "GET / HTTP/1.1" 200 OK
+INFO:     83.97.73.87:48356 - "GET /actuator/gateway/routes HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     83.97.73.87:40372 - "GET /geoserver HTTP/1.1" 404 Not Found
+INFO:     142.93.115.5:39332 - "GET /aaa9 HTTP/1.1" 404 Not Found
+INFO:     142.93.115.5:39342 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     142.93.115.5:44820 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:36630 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:37098 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     179.43.191.194:56918 - "POST /boaform/admin/formLogin HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     170.64.166.144:46016 - "GET /aaa9 HTTP/1.1" 404 Not Found
+INFO:     170.64.166.144:40640 - "GET /aab8 HTTP/1.1" 404 Not Found
+INFO:     170.64.166.144:40654 - "GET / HTTP/1.1" 200 OK
+INFO:     180.110.203.108:42373 - "GET / HTTP/1.1" 200 OK
+INFO:     179.43.191.194:50766 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:44142 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:44230 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     122.96.31.136:5333 - "GET /boaform/admin/formLogin?username=adminisp&psd=adminisp HTTP/1.0" 404 Not Found
+INFO:     38.34.113.16:63762 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:63771 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:63782 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:63775 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:63806 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     207.46.13.209:45188 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:63870 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:63871 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:63871 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     80.94.92.31:47734 - "GET / HTTP/1.0" 200 OK
+INFO:     51.79.29.48:52770 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:52898 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     51.79.29.48:34750 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:34880 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     78.11.16.228:58499 - "GET / HTTP/1.0" 200 OK
+INFO:     185.224.128.142:58254 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:55456 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:55662 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     212.71.235.185:53896 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     51.79.29.48:45828 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:46068 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:58652 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:54292 - "GET /manage/account/login HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:58982 - "GET /admin/index.html HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:37660 - "GET /index.html HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:44314 - "GET /%2BCSCOE%2B/logon.html HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:35732 - "GET /cgi-bin/login.cgi HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     18.170.212.89:56508 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:56700 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:56782 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     205.210.31.30:53042 - "GET / HTTP/1.0" 200 OK
+INFO:     162.142.125.226:42224 - "GET / HTTP/1.1" 200 OK
+INFO:     162.142.125.226:59218 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.226:34744 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     185.180.143.189:55374 - "GET / HTTP/1.1" 200 OK
+INFO:     185.180.143.189:46470 - "HEAD /documentum/upload.aspx?parentid=&uploadid=x HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     107.170.252.35:35064 - "GET /druid/index.html HTTP/1.1" 404 Not Found
+INFO:     51.79.29.48:48484 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:48656 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     84.54.51.137:59844 - "GET / HTTP/1.1" 200 OK
+INFO:     84.54.51.137:33610 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     84.54.51.137:33654 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     84.54.51.137:33808 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     190.103.30.145:54750 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:39632 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:39764 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     106.75.24.130:50444 - "GET / HTTP/1.1" 200 OK
+INFO:     162.243.144.27:50956 - "GET /ReportServer HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     51.79.29.48:44886 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:45020 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     185.36.81.33:37930 - "GET / HTTP/1.1" 200 OK
+INFO:     142.93.43.127:38884 - "GET / HTTP/1.1" 200 OK
+INFO:     205.210.31.147:58568 - "GET / HTTP/1.1" 200 OK
+INFO:     205.210.31.193:57159 - "GET / HTTP/1.0" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     165.22.42.129:34214 - "GET / HTTP/1.1" 200 OK
+INFO:     45.56.108.128:62183 - "GET /systembc/password.php HTTP/1.0" 404 Not Found
+WARNING:  Unsupported upgrade request.
+WARNING:  No supported WebSocket library detected. Please use "pip install 'uvicorn[standard]'", or install 'websockets' or 'wsproto' manually.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     212.224.93.37:49362 - "GET / HTTP/1.1" 200 OK
+INFO:     212.224.93.37:55692 - "GET / HTTP/1.1" 200 OK
+INFO:     35.195.93.98:53300 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:50508 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:50712 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     103.106.241.170:50432 - "GET / HTTP/1.1" 200 OK
+INFO:     51.79.29.48:48866 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:49058 - "GET /.env HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     23.236.147.154:32806 - "GET / HTTP/1.1" 200 OK
+INFO:     23.236.147.154:32814 - "GET /robots.txt HTTP/1.1" 404 Not Found
+INFO:     23.236.147.154:32830 - "GET /sitemap.xml HTTP/1.1" 404 Not Found
+INFO:     23.236.147.154:32834 - "GET /.well-known/security.txt HTTP/1.1" 404 Not Found
+INFO:     23.236.147.154:32844 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:65453 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65453 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     178.79.132.210:58288 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     162.243.144.4:50594 - "GET /hudson HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     38.34.113.16:50817 - "GET / HTTP/1.1" 200 OK
+INFO:     176.97.210.62:50678 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50828 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50828 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50843 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50851 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50852 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50879 - "GET /sign_up HTTP/1.1" 405 Method Not Allowed
+INFO:     38.34.113.16:50910 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50923 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:50923 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     198.199.114.69:42210 - "GET /portal/redlion HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     38.34.113.16:51280 - "GET / HTTP/1.1" 200 OK
+INFO:     84.255.202.78:45796 - "GET / HTTP/1.1" 200 OK
+INFO:     35.203.211.56:59020 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     216.218.206.66:19516 - "GET / HTTP/1.1" 200 OK
+INFO:     179.43.191.194:46106 - "GET / HTTP/1.1" 200 OK
+INFO:     216.218.206.66:20874 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     216.218.206.66:38062 - "GET /geoserver/web/ HTTP/1.1" 404 Not Found
+INFO:     139.99.23.42:50168 - "GET / HTTP/1.1" 200 OK
+INFO:     94.102.61.10:50774 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.146.52:55530 - "GET / HTTP/1.1" 200 OK
+INFO:     167.94.146.52:57928 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.94.146.52:41850 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     198.235.24.11:50791 - "GET / HTTP/1.0" 200 OK
+INFO:     20.164.227.15:57160 - "GET / HTTP/1.1" 200 OK
+INFO:     111.172.249.49:59009 - "GET / HTTP/1.1" 200 OK
+INFO:     198.235.24.202:60916 - "GET / HTTP/1.1" 200 OK
+INFO:     92.118.39.245:60414 - "POST /boaform/admin/formLogin HTTP/1.1" 404 Not Found
+INFO:     23.251.102.74:46400 - "GET / HTTP/1.1" 200 OK
+INFO:     139.162.206.108:12767 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+WARNING:  Invalid HTTP request received.
+INFO:     31.220.1.83:42258 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     74.201.28.62:62717 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     74.201.28.62:62740 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     206.189.0.60:53126 - "GET / HTTP/1.1" 200 OK
+INFO:     206.189.0.60:53126 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     206.189.0.60:33562 - "GET /HNAP1 HTTP/1.1" 404 Not Found
+INFO:     206.189.0.60:33002 - "POST /onvif/device_service HTTP/1.1" 404 Not Found
+INFO:     206.189.0.60:33006 - "GET /PSIA/index HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:64322 - "GET /80 HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:64322 - "GET / HTTP/1.1" 200 OK
+INFO:     104.53.167.176:64322 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     104.53.167.176:64328 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     104.53.167.176:64328 - "POST /answer_q1 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     98.0.178.238:62853 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     98.0.178.238:62856 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     98.0.178.238:62885 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     179.43.191.194:46610 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:9881 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:9881 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     135.84.167.181:6820 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:6820 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     162.142.125.213:58892 - "GET / HTTP/1.1" 200 OK
+INFO:     162.142.125.213:56176 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     162.142.125.213:58416 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     135.84.167.181:10648 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:10648 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:22785 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:22785 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     135.84.167.181:18256 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:5666 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:5666 - "POST /answer_q1 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     137.184.255.52:34234 - "GET /actuator/health HTTP/1.1" 404 Not Found
+INFO:     135.84.167.181:28666 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:21908 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:21908 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     135.84.167.181:26430 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:24311 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:10802 - "GET / HTTP/1.1" 200 OK
+INFO:     135.84.167.181:10802 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     135.84.167.181:10802 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     167.248.133.37:42922 - "GET / HTTP/1.1" 200 OK
+INFO:     167.248.133.37:41374 - "GET / HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     167.248.133.37:48124 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     14.29.231.137:36308 - "GET / HTTP/1.1" 200 OK
+INFO:     92.118.39.245:36140 - "POST /boaform/admin/formLogin HTTP/1.1" 404 Not Found
+INFO:     84.54.51.212:47788 - "GET /discovery HTTP/1.1" 404 Not Found
+WARNING:  Invalid HTTP request received.
+INFO:     205.210.31.152:58174 - "GET / HTTP/1.1" 200 OK
+INFO:     162.216.149.87:60746 - "GET / HTTP/1.1" 200 OK
+INFO:     94.102.61.80:34800 - "GET / HTTP/1.1" 200 OK
+INFO:     139.59.234.144:33318 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:45554 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:46762 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:49844 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:59974 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:61514 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     Started server process [22490]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:29327 (Press CTRL+C to quit)

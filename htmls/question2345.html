@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Question2345</title>
+<style>
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 16px;
+    color: rgb(122, 122, 122);
+  }
+
+  .checkbox-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+  }
+
+  .custom-checkbox {
+    width: 18px;
+    height: 18px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    margin-right: 8px;
+  }
+
+  .custom-checkbox::before {
+    content: "";
+    display: none;
+    width: 12px;
+    height: 12px;
+    background-color: #71b1d4;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  input[type="checkbox"]:checked + .custom-checkbox::before {
+    display: block;
+  }
+
+  .button-group {
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .buttonB {
+    width: 100px;
+    padding: 5px 20px;
+    margin: 0 5px;
+    background-color: #7a7a7a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    display: none;
+  }
+
+  .buttonB:active {
+    background-color: #d0d0d0; /* Change color on button press */
+  }
+
+  .button {
+    width: 150px;
+    padding: 5px 20px;
+    margin: 0 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+  .button:active {
+    background-color: #99caff; /* Change color on button press */
+  }
+
+  .button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+
+  .dropdown {
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+<h1></h1>
+<h2></h2>
+<form id="form" action="/answer_q2345" method="post">
+
+  <!-- Question 3: College Names -->
+  <div class="checkbox-group">
+    <label for="collegeNames">3. Where did you go for undergraduate? (Max 3)</label>
+    <input type="text" id="college1" name="college1" placeholder="College 1">
+    <input type="text" id="college2" name="college2" placeholder="College 2" style="margin-top: 10px;">
+    <input type="text" id="college3" name="college3" placeholder="College 3" style="margin-top: 10px;">
+  </div>
+
+  <!-- Question 4: Preferred Industry Choice -->
+  <div class="dropdown">
+    <label for="industry1">4. What's your most preferred industry choice?</label>
+    <select id="industry1" name="industry1">
+      <option value="Industrials">Industrials</option>
+      <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
+      <option value="Technology Media (TMT)">Technology Media (TMT)</option>
+      <option value="Consumer Retail">Consumer Retail</option>
+      <option value="Real Estate">Real Estate</option>
+      <option value="Natural Resources / Chemicals">Natural Resources / Chemicals</option>
+      <option value="M&A">M&A</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Financial Sponsors (FSG)">Financial Sponsors (FSG)</option>
+    </select>
+  </div>
+
+
+    <!-- Question 5: Second Industry Choice -->
+  <div class="dropdown">
+    <label for="industRy2">5. What's your second industry choice?</label>
+    <select id="industRy2" name="industRy2">
+      <option value="Industrials">Industrials</option>
+      <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
+      <option value="Technology Media (TMT)">Technology Media (TMT)</option>
+      <option value="Consumer Retail">Consumer Retail</option>
+      <option value="Real Estate">Real Estate</option>
+      <option value="Natural Resources / Chemicals">Natural Resources / Chemicals</option>
+      <option value="M&A">M&A</option>
+      <option value="Healthcare">Healthcare</option>
+      <option value="Financial Sponsors (FSG)">Financial Sponsors (FSG)</option>
+    </select>
+  </div>
+
+    <!-- Question 6: Other Industry Choice -->
+    <div class="dropdown">
+      <label for="industry3">6. What's your other industry choice?</label>
+      <select id="industry3" name="industry3">
+        <option value="Industrials">Industrials</option>
+        <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
+        <option value="Technology Media (TMT)">Technology Media (TMT)</option>
+        <option value="Consumer Retail">Consumer Retail</option>
+        <option value="Real Estate">Real Estate</option>
+        <option value="Natural Resources / Chemicals">Natural Resources / Chemicals</option>
+        <option value="M&A">M&A</option>
+        <option value="Healthcare">Healthcare</option>
+        <option value="Financial Sponsors (FSG)">Financial Sponsors (FSG)</option>
+      </select>
+    </div>
+
+  <div class="button-group">
+    <button class="buttonB" id="backBtn">Back</button>
+    <button class="button" id="nextBtn" type="submit">Next</button>
+  </div>
+</form>
+<script>
+  const userInfo = ["{{first_name}}", "{{last_name}}", "{{email}}", "{{profession}}", "{{recruit1}}", "{{recruit2}}", "{{recruit3}}"];
+
+  const backBtn = document.getElementById("backBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const industryChoice = document.getElementById("industryChoice");
+  const form = document.getElementById("form");
+
+  backBtn.addEventListener("click", () => {
+    window.history.back();
+  });
+
+  form.addEventListener("submit", (event) => {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // Validate college names
+    const college1 = document.getElementById("college1").value.trim();
+    const college2 = document.getElementById("college2").value.trim();
+    const college3 = document.getElementById("college3").value.trim();
+
+    if (!college1 && !college2 && !college3) {
+      alert("Please enter at least one college name.");
+      return;
+    }
+
+    // Validate college names are in English
+    const englishRegex = /^[A-Za-z\s]+$/;
+    if ((college1 && !englishRegex.test(college1)) || (college2 && !englishRegex.test(college2)) || (college3 && !englishRegex.test(college3))) {
+      alert("Please enter college names in English.");
+      return;
+    }
+
+    const selectedIndustry = industryChoice.value; // Get the selected industry value
+
+    // Handle the form submission data as needed
+    const selectedValues = [selectedIndustry, college1, college2, college3];
+    const hiddenField = document.createElement("input");
+    hiddenField.setAttribute("type", "hidden");
+    hiddenField.setAttribute("name", "informations");
+    const infoStr = userInfo.join("|") + "|" + selectedValues.join("|");
+    hiddenField.setAttribute("value", infoStr);
+    form.appendChild(hiddenField);
+
+    // Proceed with submitting the form
+    //form.submit();
+  });
+</script>
+</body>
+</html>

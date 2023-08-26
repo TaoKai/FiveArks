@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Questions</title>
+<title>Question1</title>
 <style>
   body {
     display: flex;
@@ -114,93 +114,98 @@
 </style>
 </head>
 <body>
-  <h1>What are your objectives?</h1>
-  <h2>Select up to 3 objectives. These will be kept private from other users, but help us find relevant matches.</h2>
-    <form id="form" action="/answer_q1" method="post">
+  <h1>1. What are your recruiting objectives? (Max 3 choices)</h1>
+  <h2></h2>
+  <form id="form" action="/answer_q1" method="post"> <!-- Keep the action URL -->
     <div id="checkbox-group" class="checkbox-group">
-    <label>
-      <input type="checkbox" value="1.IB">
-      <span class="custom-checkbox"></span>
+      <label>
+        <input type="checkbox" value="1.IB">
+        <span class="custom-checkbox"></span>
         IB
-    </label>
-    <label>
-      <input type="checkbox" value="2.Consulting">
-      <span class="custom-checkbox"></span>
-      Consulting
-    </label>
-    <label>
-      <input type="checkbox" value="3.Buyside (PE, VC, Hedge Fund)">
-      <span class="custom-checkbox"></span>
-      Buyside (PE, VC, Hedge Fund)
-    </label>
-    <label>
+      </label>
+      <label>
+        <input type="checkbox" value="2.Consulting">
+        <span class="custom-checkbox"></span>
+        Consulting
+      </label>
+      <label>
+        <input type="checkbox" value="3.Buyside (PE, VC, Hedge Fund)">
+        <span class="custom-checkbox"></span>
+        Buyside (PE, VC, Hedge Fund)
+      </label>
+      <label>
         <input type="checkbox" value="4.Corp Dev">
         <span class="custom-checkbox"></span>
         Corp Dev
-    </label>
-    <label>
+      </label>
+      <label>
         <input type="checkbox" value="5.Corp General">
         <span class="custom-checkbox"></span>
         Corp General
-    </label>
-    <label>
+      </label>
+      <label>
         <input type="checkbox" value="6.Startup">
         <span class="custom-checkbox"></span>
         Startup
-    </label>
-    <label>
+      </label>
+      <label>
         <input type="checkbox" value="7.Hedge Fund">
         <span class="custom-checkbox"></span>
         Hedge Fund
-    </label>
-    <label>
-        <input type="checkbox" value="8.All">
-        <span class="custom-checkbox"></span>
-        All
-    </label>
-    <label>
+      </label>
+      <label>
         <input type="checkbox" value="9.Other - please specify">
         <span class="custom-checkbox"></span>
         Other - please specify
-    </label>
-  </div>
-  <div class="button-group">
-    <button class="buttonB" id="backBtn">Back</button>
-    <button class="button" id="nextBtn" type="submit" disabled>Next</button>
-  </div>
+      </label>
+    </div>
+    <p id="warning" style="color: red;"></p>
+    <div class="button-group">
+      <button class="buttonB" id="backBtn">Back</button>
+      <button class="button" id="nextBtn" type="submit" disabled>Next</button>
+    </div>
   </form>
-  <script>
-    const userInfo = ["{{first_name}}", "{{last_name}}", "{{email}}", "{{profession}}"];
-    const backBtn = document.getElementById("backBtn")
-    const nextBtn = document.getElementById("nextBtn")
-    var checkValues = [];
-    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-    const form = document.getElementById("form");
-    checkboxes.forEach((checkbox, index) => {
-        checkbox.addEventListener("change", ()=>{
-            const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
-            checkValues = [];
-            checkedCheckboxes.forEach((cb, i)=>{
-                checkValues.push(cb.value);
-            });
-            if(checkValues.length>2){
-                nextBtn.disabled = false;
-            }else{
-                nextBtn.disabled = true;
-            }
-        });
+<script>
+  const userInfo = ["{{first_name}}", "{{last_name}}", "{{email}}", "{{profession}}"];
+  const backBtn = document.getElementById("backBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const form = document.getElementById("form");
+  const warning = document.getElementById("warning");
+
+  let recruit1 = "EMPTY";
+  let recruit2 = "EMPTY";
+  let recruit3 = "EMPTY";
+
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const checkedCheckboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+      nextBtn.disabled = checkedCheckboxes.length === 0;
+
+      if (checkedCheckboxes.length > 3) {
+        checkbox.checked = false; // Prevent the fourth checkbox from being checked
+        warning.textContent = "You can only select up to 3 choices.";
+        setTimeout(() => {
+          warning.textContent = "";
+        }, 3000); // Clear the warning after 3 seconds
+      }
+
+      // Update the recruit variables based on user's choices
+      const selectedValues = Array.from(checkedCheckboxes).map((cb) => cb.value);
+      recruit1 = selectedValues[0] || "EMPTY";
+      recruit2 = selectedValues[1] || "EMPTY";
+      recruit3 = selectedValues[2] || "EMPTY";
     });
-    backBtn.addEventListener("click", ()=>{
-        window.history.back();
-    });
-    form.addEventListener("submit", (event)=>{
-        const hiddenField = document.createElement("input");
-        hiddenField.setAttribute("type", "hidden");
-        hiddenField.setAttribute("name", "informations");
-        const infoStr = userInfo.join("|")+"|"+checkValues.join("|");
-        hiddenField.setAttribute("value", infoStr);
-        form.appendChild(hiddenField);
-    });
-  </script>
+  });
+
+  form.addEventListener("submit", (event) => {
+    const hiddenField = document.createElement("input");
+    hiddenField.setAttribute("type", "hidden");
+    hiddenField.setAttribute("name", "informations");
+    const infoStr = userInfo.join("|") + "|" + recruit1 + "|" + recruit2 + "|" + recruit3;
+    hiddenField.setAttribute("value", infoStr);
+    form.appendChild(hiddenField);
+  });
+</script>
 </body>
 </html>
