@@ -149,8 +149,8 @@
 
     <!-- Question 5: Second Industry Choice -->
   <div class="dropdown">
-    <label for="industRy2">5. What's your second industry choice?</label>
-    <select id="industRy2" name="industRy2">
+    <label for="industry2">5. What's your second industry choice?</label>
+    <select id="industry2" name="industry2">
       <option value="Industrials">Industrials</option>
       <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
       <option value="Technology Media (TMT)">Technology Media (TMT)</option>
@@ -219,12 +219,13 @@
     }
 
     // Handle the form submission data as needed
-    const selectedValues = [college1, college2, college3, industry1.value, industry2.value, industry3.value];
+    const industries = [industry1.value, industry2.value, industry3.value];
+    alert(industries.join(", "));
+    const selectedValues = [college1, college2, college3];
     const hiddenField = document.createElement("input");
     hiddenField.setAttribute("type", "hidden");
     hiddenField.setAttribute("name", "informations");
     const infoStr = userInfo.join("|") + "|" + selectedValues.join("|");
-    alert(infoStr);
     hiddenField.setAttribute("value", infoStr);
     form.appendChild(hiddenField);
 
