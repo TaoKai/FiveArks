@@ -383,3 +383,152 @@ INFO:     Started server process [22490]
 INFO:     Waiting for application startup.
 INFO:     Application startup complete.
 INFO:     Uvicorn running on http://0.0.0.0:29327 (Press CTRL+C to quit)
+INFO:     Started server process [22659]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     175.99.132.245:52436 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:53204 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:53708 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     205.210.31.69:50767 - "GET / HTTP/1.0" 200 OK
+INFO:     38.34.113.16:64875 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:6310 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65025 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65028 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65030 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65066 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65067 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65067 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:50394 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:50490 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:50626 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:50672 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:51426 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:51720 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     Started server process [22795]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     38.34.113.16:65118 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:9274 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:9332 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:9372 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:65117 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65121 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:9868 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:10046 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     51.79.29.48:44800 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:44920 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:44170 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:44280 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65184 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:44362 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:44704 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65187 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:44980 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65187 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:46136 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     175.99.132.245:49040 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+WARNING:  Invalid HTTP request received.
+INFO:     175.99.132.245:1374 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:1480 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:1504 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:1724 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:1892 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65248 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     175.99.132.245:24542 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65303 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:25006 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65306 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65306 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:25370 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:26696 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     38.34.113.16:65312 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     38.34.113.16:65341 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65340 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65343 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     Started server process [22889]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     175.99.132.245:44330 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:44428 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:44452 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:44768 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:44934 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     51.79.29.48:60654 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:60766 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     38.34.113.16:65384 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:8758 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65383 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:65383 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:8996 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:9232 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:23420 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:24734 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:24932 - "POST /answer_q1 HTTP/1.1" 200 OK
+WARNING:  Invalid HTTP request received.
+INFO:     175.99.132.245:35544 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:35682 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:35722 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:36160 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:36364 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:41372 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:41512 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:41534 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:41966 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:42256 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:45918 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61965 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:46534 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:46912 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61966 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61966 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61966 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     175.99.132.245:47598 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     38.34.113.16:61989 - "GET / HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61990 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61990 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:61993 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     175.99.132.245:64300 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:64722 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:65012 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:1860 - "POST /answer_q2345 HTTP/1.1" 422 Unprocessable Entity
+INFO:     172.105.128.12:52512 - "GET / HTTP/1.1" 200 OK
+INFO:     Started server process [23088]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     175.99.132.245:21654 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:21878 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:22020 - "POST /answer_q1 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:22556 - "POST /answer_q2345 HTTP/1.1" 200 OK
+INFO:     Started server process [23109]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     Started server process [23117]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 80): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [23131]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     175.99.132.245:35466 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:40940 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:41094 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:41128 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:41142 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:42590 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:42878 - "POST /answer_q1 HTTP/1.1" 200 OK
+{'request': <starlette.requests.Request object at 0x7f3528fe2150>, 'college1': 'BUPT', 'college2': '', 'college3': '', 'industry1': 'Industrials', 'industry2': 'Technology Media (TMT)', 'industry3': 'Financial Institutions Group (FIG)'}
+INFO:     175.99.132.245:43388 - "POST /answer_q2345 HTTP/1.1" 200 OK
+INFO:     175.99.132.245:60270 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:60886 - "POST /sign_up HTTP/1.1" 200 OK
+INFO:     175.99.132.245:61116 - "POST /answer_q1 HTTP/1.1" 200 OK
+{'request': <starlette.requests.Request object at 0x7f3528ff0410>, 'college1': 'BUPT', 'college2': 'aaaa', 'college3': '', 'industry1': 'Industrials', 'industry2': 'Technology Media (TMT)', 'industry3': 'Financial Institutions Group (FIG)'}
+INFO:     175.99.132.245:62668 - "POST /answer_q2345 HTTP/1.1" 200 OK
+INFO:     38.34.113.16:62251 - "GET / HTTP/1.1" 200 OK

@@ -120,7 +120,6 @@
 <body>
 <h1></h1>
 <h2></h2>
-<form id="form" action="/answer_q2345" method="post">
 
   <!-- Question 3: College Names -->
   <div class="checkbox-group">
@@ -132,7 +131,7 @@
 
   <!-- Question 4: Preferred Industry Choice -->
   <div class="dropdown">
-    <label for="industry1">4. What's your most preferred industry choice?</label>
+    <label id="industry1name">4. What's your most preferred industry choice?</label>
     <select id="industry1" name="industry1">
       <option value="Industrials">Industrials</option>
       <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
@@ -149,7 +148,7 @@
 
     <!-- Question 5: Second Industry Choice -->
   <div class="dropdown">
-    <label for="industry2">5. What's your second industry choice?</label>
+    <label id="industry2name">5. What's your second industry choice?</label>
     <select id="industry2" name="industry2">
       <option value="Industrials">Industrials</option>
       <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
@@ -165,7 +164,7 @@
 
     <!-- Question 6: Other Industry Choice -->
     <div class="dropdown">
-      <label for="industry3">6. What's your other industry choice?</label>
+      <label id="industry3name">6. What's your other industry choice?</label>
       <select id="industry3" name="industry3">
         <option value="Industrials">Industrials</option>
         <option value="Financial Institutions Group (FIG)">Financial Institutions Group (FIG)</option>
@@ -178,7 +177,7 @@
         <option value="Financial Sponsors (FSG)">Financial Sponsors (FSG)</option>
       </select>
     </div>
-
+<form id="form" action="/answer_q2345" method="post">
   <div class="button-group">
     <button class="buttonB" id="backBtn">Back</button>
     <button class="button" id="nextBtn" type="submit">Next</button>
@@ -199,7 +198,7 @@
   });
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent the default form submission behavior
+    //event.preventDefault(); // Prevent the default form submission behavior
 
     // Validate college names
     const college1 = document.getElementById("college1").value.trim();
@@ -225,11 +224,12 @@
     hiddenField.setAttribute("type", "hidden");
     hiddenField.setAttribute("name", "informations");
     const infoStr = userInfo.join("|") + "|" + selectedValues.join("|")+"|"+industries.join("|");
+    alert(infoStr);
     hiddenField.setAttribute("value", infoStr);
     form.appendChild(hiddenField);
 
     // Proceed with submitting the form
-    // form.submit();
+   //  form.submit();
   });
 </script>
 </body>
