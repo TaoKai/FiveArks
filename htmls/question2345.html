@@ -189,7 +189,9 @@
 
   const backBtn = document.getElementById("backBtn");
   const nextBtn = document.getElementById("nextBtn");
-  const industryChoice = document.getElementById("industryChoice");
+  const industry1 = document.getElementById("industry1");
+  const industry2 = document.getElementById("industry2");
+  const industry3 = document.getElementById("industry3");
   const form = document.getElementById("form");
 
   backBtn.addEventListener("click", () => {
@@ -216,14 +218,13 @@
       return;
     }
 
-    const selectedIndustry = industryChoice.value; // Get the selected industry value
-
     // Handle the form submission data as needed
-    const selectedValues = [selectedIndustry, college1, college2, college3];
+    const selectedValues = [college1, college2, college3];
     const hiddenField = document.createElement("input");
     hiddenField.setAttribute("type", "hidden");
     hiddenField.setAttribute("name", "informations");
     const infoStr = userInfo.join("|") + "|" + selectedValues.join("|");
+    alert(infoStr);
     hiddenField.setAttribute("value", infoStr);
     form.appendChild(hiddenField);
 
