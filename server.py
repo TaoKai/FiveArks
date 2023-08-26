@@ -25,21 +25,25 @@ async def index(request: Request):
 async def signup(request: Request):
     return templates.TemplateResponse("signup.html", {"request": request})
 
-#@app.post("/sign_up")
-#async def sign_up(request: Request, first_name: Annotated[str, Form()], last_name: Annotated[str, Form()], email: Annotated[str, Form()], profession: Annotated[str, Form()], recruit1: Annotated[str, Form()]):
-#    dic = {
-#        "request": request,
-#        "first_name": first_name,
-#        "last_name": last_name,
-#        "email": email,
-#        "profession": profession,
-#        "recruit1": recruit1,
-#    }
-#    return templates.TemplateResponse("temp.html", dic)
+@app.post("/signup_form")
+async def sign_up(request: Request, informations: Annotated[str, Form()]):
+   infos = informations.split("|")
+#    ["first_name","last_name","email","profession","recruit1","recruit2","recruit3"]
+   dic = {
+       "request": request, 
+       "first_name": infos[0],
+       "last_name": infos[1],
+       "email": infos[2],
+       "profession": infos[3],
+       "recruit1": infos[4],
+       "recruit2": infos[5],
+       "recruit3": infos[6],
+   }
+   return templates.TemplateResponse("temp.html", dic)
 
-@app.get("/sign_in", response_class=HTMLResponse)
+@app.get("/signin", response_class=HTMLResponse)
 async def signin(request: Request):
-    return templates.TemplateResponse("signin.html", {"request": request})
+    return templates.TemplateResponse("temp.html", {"request": request})
 
 
 

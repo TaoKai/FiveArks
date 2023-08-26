@@ -7,8 +7,8 @@
 <style>
   body {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
@@ -16,14 +16,21 @@
 
   h1 {
     font-size: 24px;
-    text-align: center;
+    text-align: left;
     white-space: normal;
   }
 </style>
 </head>
 <body>
-  <h1>{{first_name}}</h1>
-  <h2>{{last_name}}</h2>
-  <h3>{{recruit1}}</h3>
+  <div class="wrapper">
+    <p>This is a temp page.</p>
+    <h1>first name: {{first_name}}</h1>
+    <h1>last name: {{last_name}}</h1>
+    <h1>email: {{email}}</h1>
+    <h1>profession: {{profession}}</h1>
+    <h1>recruit1: {{recruit1}}</h1>
+    <h1>recruit2: {{recruit2}}</h1>
+    <h1>recruit3: {{recruit3}}</h1>
+  </div>
 </body>
 </html>

@@ -123,7 +123,7 @@
 <div class="login-container">
     <h1>Project FiveARKs</h1>
     <div id="error-message" class="error-message"></div> <!-- Error message div -->
-    <form action="/sign_up" method="post" onsubmit="return validateForm();">
+    <form id="form" action="/signup_form" method="post">
     <input id="first_name" name="first_name" class="input-field" type="text" placeholder="First Name">
     <input id="last_name" name="last_name" class="input-field" type="text" placeholder="Last Name">
     <input id="email" name="email" class="input-field" type="email" placeholder="Email">
@@ -143,7 +143,7 @@
     </div>
     <div class="professional-row">
       <label class="select-label">Recruiting Objective (Option 1)</label>
-      <select class="professional-type" name="recruit1">
+      <select id="recruit1" class="professional-type" name="recruit1">
         <option value="">Select Option</option>
         <option value="IB">IB</option>
         <option value="Consulting">Consulting</option>
@@ -157,7 +157,7 @@
     </div>
     <div class="professional-row">
       <label class="select-label">Recruiting Objective (Option 2)</label>
-      <select class="professional-type" name="recruit2">
+      <select id="recruit2" class="professional-type" name="recruit2">
         <option value="">Select Option</option>
         <option value="IB">IB</option>
         <option value="Consulting">Consulting</option>
@@ -171,7 +171,7 @@
     </div>
     <div class="professional-row">
       <label class="select-label">Recruiting Objective (Option 3)</label>
-      <select class="professional-type" name="recruit3">
+      <select id="recruit3" class="professional-type" name="recruit3">
         <option value="">Select Option</option>
         <option value="IB">IB</option>
         <option value="Consulting">Consulting</option>
@@ -253,6 +253,27 @@
     selectElement.addEventListener("change", () => {
       updateRecruitOptions();
     });
+  });
+
+  const form = document.getElementById("form");
+  form.addEventListener("submit", (event) => {
+    event.preventDefault();
+    if(!validateForm()){
+      return;
+    }
+    const str_names = ["first_name","last_name","email","profession","recruit1","recruit2","recruit3"];
+    var infos = [];
+    str_names.forEach(s => {
+      const info = document.getElementById(s).value;
+      infos.push(info);
+    });
+    const hiddenField = document.createElement("input");
+    hiddenField.setAttribute("type", "hidden");
+    hiddenField.setAttribute("name", "informations");
+    const infoStr = infos.join("|")
+    hiddenField.setAttribute("value", infoStr);
+    form.appendChild(hiddenField);
+    form.submit();
   });
 </script>
 </body>
