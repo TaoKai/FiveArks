@@ -220,17 +220,16 @@
 
     // Handle the form submission data as needed
     const industries = [industry1.value, industry2.value, industry3.value];
-    alert(industries.join(", "));
     const selectedValues = [college1, college2, college3];
     const hiddenField = document.createElement("input");
     hiddenField.setAttribute("type", "hidden");
     hiddenField.setAttribute("name", "informations");
-    const infoStr = userInfo.join("|") + "|" + selectedValues.join("|");
+    const infoStr = userInfo.join("|") + "|" + selectedValues.join("|")+"|"+industries.join("|");
     hiddenField.setAttribute("value", infoStr);
     form.appendChild(hiddenField);
 
     // Proceed with submitting the form
-    form.submit();
+    // form.submit();
   });
 </script>
 </body>
