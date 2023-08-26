@@ -752,3 +752,35 @@ INFO:     38.68.53.162:56169 - "POST / HTTP/1.1" 405 Method Not Allowed
 INFO:     87.236.176.75:41555 - "GET / HTTP/1.1" 200 OK
 INFO:     51.79.29.48:49458 - "POST / HTTP/1.1" 405 Method Not Allowed
 INFO:     51.79.29.48:49692 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     51.79.29.48:58724 - "POST / HTTP/1.1" 405 Method Not Allowed
+INFO:     51.79.29.48:58886 - "GET /.env HTTP/1.1" 404 Not Found
+INFO:     Started server process [26040]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+ERROR:    [Errno 98] error while attempting to bind on address ('0.0.0.0', 80): address already in use
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Started server process [26079]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     Started server process [26095]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+INFO:     Started server process [26117]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:80 (Press CTRL+C to quit)
+WARNING:  Invalid HTTP request received.
+INFO:     175.99.132.245:48404 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:48692 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:48968 - "GET / HTTP/1.1" 200 OK
+INFO:     175.99.132.245:49076 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     175.99.132.245:49148 - "GET /signin HTTP/1.1" 200 OK
+INFO:     175.99.132.245:49538 - "GET /signup HTTP/1.1" 200 OK
+INFO:     175.99.132.245:52280 - "POST /signup_form HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [26117]
