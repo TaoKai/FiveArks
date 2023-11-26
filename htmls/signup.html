@@ -122,11 +122,12 @@
 <body>
 <div class="login-container">
     <h1>Project FiveARKs</h1>
-    <div id="error-message" class="error-message"></div> <!-- Error message div -->
+    <div id="error-message" class="error-message">{{err_msg}}</div> <!-- Error message div -->
     <form id="form" action="/signup_form" method="post">
     <input id="first_name" name="first_name" class="input-field" type="text" placeholder="First Name">
     <input id="last_name" name="last_name" class="input-field" type="text" placeholder="Last Name">
     <input id="email" name="email" class="input-field" type="email" placeholder="Email">
+    <input id="password" name="password" class="input-field" type="password" placeholder="Password">
     <div class="professional-row">
       <label class="select-label">Professional/Student Type</label>
       <select id="profession" class="professional-type" name="profession">
@@ -207,8 +208,9 @@
     const first_name_inp = document.getElementById("first_name").value;
     const last_name_inp = document.getElementById("last_name").value;
     const email_inp = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
     const profession_sel = document.getElementById("profession").value;
-    const datas = [first_name_inp, last_name_inp, email_inp, profession_sel];
+    const datas = [first_name_inp, last_name_inp, email_inp, password, profession_sel];
 
     const errorMessageElement = document.getElementById("error-message");
     errorMessageElement.textContent = ""; // Clear any previous error message
@@ -261,7 +263,7 @@
     if(!validateForm()){
       return;
     }
-    const str_names = ["first_name","last_name","email","profession","recruit1","recruit2","recruit3"];
+    const str_names = ["first_name","last_name","email","password","profession","recruit1","recruit2","recruit3"];
     var infos = [];
     str_names.forEach(s => {
       const info = document.getElementById(s).value;

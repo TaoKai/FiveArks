@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Centered User Informations</title>
+<style>
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1 {
+    font-size: 24px;
+    text-align: left;
+    white-space: normal;
+  }
+
+  .button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: underline;
+    font-weight: normal;
+    transition: font-weight 0.3s, text-decoration 0.3s;
+  }
+
+  .button:hover {
+    text-decoration: none;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+  <div class="wrapper">
+    <p>You have registered successfully, please login with your email and password.</p>
+    <h1>first name: {{first_name}}</h1>
+    <h1>last name: {{last_name}}</h1>
+    <h1>email: {{email}}</h1>
+    <!-- <h1>password: {{password}}</h1> -->
+    <h1>profession: {{profession}}</h1>
+    <!-- <h1>recruit1: {{recruit1}}</h1>
+    <h1>recruit2: {{recruit2}}</h1>
+    <h1>recruit3: {{recruit3}}</h1> -->
+    <br/>
+    <a href="/" class="button">Let's go back</a>
+  </div>
+</body>
+</html>
+<!-- create table users(id int auto_increment primary key, first_name varchar(20) not NULL, last_name varchar(20) not NULL, email varchar(40) not NULL, password varchar(40) not NULL,profession varchar(40) not NULL,recruit1 varchar(40) not NULL,recruit2 varchar(40) not NULL,recruit3 varchar(40) not NULL); -->

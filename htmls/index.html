@@ -38,7 +38,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    text-decoration: underline;
+    text-decoration: unset;
     font-weight: normal;
     transition: font-weight 0.3s, text-decoration 0.3s;
   }
@@ -47,13 +47,19 @@
     text-decoration: none;
     font-weight: bold;
   }
+
+  .user-label { /* 新增样式 */
+    font-size: 14px;
+    color: #565656;
+  }
 </style>
 </head>
 <body>
-<h1>Project FiveARKs</h1>
-<div class="button-container">
-  <a href="/signin" class="button">Sign In</a>
-  <a href="/signup" class="button">Sign Up</a>
+  <!-- <span class="user-label" id="user-label">User: {{user}}</span> -->
+  <h1>Project FiveARKs</h1>
+  <div class="button-container">
+    <a href="/signin" class="button">Sign In</a>
+    <a href="/signup" class="button">Sign Up</a>
 </div>
 </body>
 </html>

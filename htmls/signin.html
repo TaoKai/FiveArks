@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Login</title>
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  .button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px 10px;
+    cursor: pointer;
+    width: 400px;
+    font-size: 18px;
+  }
+  .button:active {
+    background-color: #0056b3; /* Change color on button press */
+  }
+  .input0 {
+    width: 95%;
+    padding: 10px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  span {
+    color: red;
+    margin: 10px;
+  }
+  </style>
+</head>
+<body>
+  <h1>Project FiveARKs</h1>
+  <br><br>
+  <form action="/login" method="POST">
+    <input class="input0" type="email" id="email" name="email" placeholder="email" required><br><br>
+    <input class="input0" type="password" id="password" name="password" placeholder="password" required><br>
+    <input class="button" type="submit" value="login">
+  </form>
+  <span>{{hint}}</span>
+</body>
+</html>
