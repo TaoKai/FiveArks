@@ -17,7 +17,7 @@ templates = Jinja2Templates(directory="htmls")
 cnx = mysql.connector.connect(
     host="localhost",
     user="root",
-    password="Tk19900327",
+    password="TaoKai123456",
     database="fivearks"
 )
 
